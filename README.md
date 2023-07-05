@@ -55,5 +55,4 @@ Guest
 - Resume
 - Portfolio
 - Contact
-Admin
 - Admin Dashboard
