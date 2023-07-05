@@ -5,7 +5,7 @@
                 <script>
                   document.write(new Date().getFullYear());
                 </script>, made with ❤️ by
-                <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">Work With Deva</a>
+                <a href="https://www.instagram.com/devakertiwijaya/" target="_blank" class="footer-link fw-bolder">Work With Deva</a>
               </div>
             <div>
           </footer>

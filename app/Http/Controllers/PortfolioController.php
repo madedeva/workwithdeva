@@ -89,21 +89,9 @@ class PortfolioController extends Controller
                 }
             }
         }else{
-            // use old image, if input does not have new image
             $portfolio = Portfolio::find($id);
             $name = $portfolio->image;
         }
-
-        // upload new image and remove old image, input does not have new image, use old image
-        // if ($file = $request->file('image')) {
-        //     $destinationPath = 'img/';
-        //     $name = date('YmdHis') . "." . $file->getClientOriginalExtension();
-        //     $file->move($destinationPath, $name);
-        //     $input['image'] = "$name";
-        // } else {
-        //     $portfolio = Portfolio::find($id);
-        //     $input['image'] = $portfolio->image;
-        // }
 
         $portfolio = Portfolio::find($id);
         $portfolio->update([
@@ -131,7 +119,5 @@ class PortfolioController extends Controller
         $portfolio->delete();
 
         return redirect('/dashboard/portfolio')->with('success', 'Portfolio deleted successfully');
-
-        // return redirect()->route('admin.portfolio')->with('success', 'Portfolio deleted successfully');
     }
 }

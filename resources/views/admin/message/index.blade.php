@@ -31,7 +31,7 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Subject</th>
-                                        <th>Message</th>
+                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                     @foreach ($messages as $message)
@@ -39,8 +39,13 @@
                                         <td>{{ $message->name }}</td>
                                         <td>{{ $message->email }}</td>
                                         <td>{{ $message->subject }}</td>
-                                        <td>{{ $message->message }}</td>
+                                        @if ($message->status == 0)
+                                        <td><span class="badge bg-danger">Unread</span></td>
+                                        @else
+                                        <td><span class="badge bg-success">Read</span></td>
+                                        @endif
                                         <td>
+                                            <a href="{{ route('admin.message.edit', $message->id) }}" class="btn btn-primary">View</a>
                                             <form action="{{ route('admin.message.destroy', $message->id) }}" method="POST" class="d-inline">
                                                 @method('delete')
                                                 @csrf

@@ -15,7 +15,7 @@
           <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut similique doloribus fugiat in fuga nemo itaque provident deleniti, exercitationem iusto earum maiores reprehenderit culpa perferendis necessitatibus? Rem, est eum.</p>
           <div class="btns">
             <a href="/about" class="btn-about">About Me</a>
-            <a href="/download" class="btn-download">Download CV</a>
+            <a href="/download-cv" class="btn-download">Download CV</a>
           </div>
         </div>
 

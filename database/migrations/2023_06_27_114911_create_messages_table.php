@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('subject');
-            $table->string('message');
+            $table->longText('message');
+            $table->enum('status', ['0', '1'])->default('0');
             $table->timestamps();
         });
     }

@@ -68,14 +68,7 @@
                 <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
 
-              <div class="text-center">
-                <button class="btn btn-primary" type="button" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  Loading...
-                </button>
-              </div>
-
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center btn-send"><button type="submit">Send Message</button></div>
 
             </form>
 

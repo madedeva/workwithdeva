@@ -1,6 +1,6 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
         <div class="app-brand demo">
-          <a href="index.html" class="app-brand-link">
+          <a href="/dashboard" class="app-brand-link">
             <img src="{{ asset('assets/img/logo.png') }}" alt="logo" class="app-brand-logo" width="30%">
             <span class="app-brand-text demo menu-text fw-bolder ms-2">Admin</span>
           </a>
@@ -22,6 +22,9 @@
           </li>
 
           <!-- Layouts -->
+          <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Content</span>
+          </li>
           <li class="menu-item {{ request()->is('dashboard/about') || request()->is('dashboard/skill') || request()->is('dashboard/resume') || request()->is('dashboard/category') || request()->is('dashboard/portfolio') || request()->is('dashboard/message') ? 'active' : '' }}">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
               <i class="menu-icon tf-icons bx bx-layout"></i>
@@ -74,6 +77,21 @@
               <li class="menu-item {{ request()->is('dashboard/profile') ? 'active' : '' }}">
                 <a href="/dashboard/profile" class="menu-link">
                   <div data-i18n="Account">Account</div>
+                </a>
+            </ul>
+          </li>
+          <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">About System</span>
+          </li>
+          <li class="menu-item {{ request()->is('dashboard/about-system') ? 'active' : '' }}">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class='menu-icon tf-icons bx bx-info-circle'></i>
+              <div data-i18n="Account Settings">About System</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item {{ request()->is('dashboard/about-system') ? 'active' : '' }}">
+                <a href="/dashboard/about-system" class="menu-link">
+                  <div data-i18n="Account">System Details</div>
                 </a>
             </ul>
           </li>

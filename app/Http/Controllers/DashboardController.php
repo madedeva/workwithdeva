@@ -8,6 +8,7 @@ use App\Models\Skill;
 use App\Models\Resume;
 use App\Models\PortfolioCategory;
 use App\Models\Portfolio;
+use App\Models\Message;
 
 class DashboardController extends Controller
 {
@@ -23,13 +24,13 @@ class DashboardController extends Controller
 
         $resume = Resume::count();
 
-        $category = PortfolioCategory::count();
-
         $portfolio = Portfolio::count();
 
         $skillchart = Skill::all();
 
-        return view('admin.dashboard', compact('about', 'skill', 'resume', 'category', 'portfolio', 'skillchart'));
+        $new_message = Message::where('status', '0')->count();
+
+        return view('admin.dashboard', compact('about', 'skill', 'resume', 'portfolio', 'new_message'));
     }
 
     public function edit($id){

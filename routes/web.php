@@ -24,6 +24,7 @@ use App\Http\Controllers\CategoryController;
 // guest routes
 Route::get('/', [GuestController::class, 'index'])->name('home');
 Route::get('/about', [GuestController::class, 'about'])->name('about');
+Route::get('/download-cv', [GuestController::class, 'downloadCv'])->name('download.cv');
 Route::get('/resume', [GuestController::class, 'resume'])->name('resume');
 Route::prefix('portfolio')->group(function () {
     Route::get('/', [GuestController::class, 'portfolio'])->name('portfolio');
@@ -86,8 +87,14 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(function () 
     // message routes
     Route::prefix('message')->group(function () {
         Route::get('/', [App\Http\Controllers\MessageController::class, 'index'])->name('admin.message.index');
-        Route::get('/show/{id}', [App\Http\Controllers\MessageController::class, 'show'])->name('admin.message.show');
+        Route::get('/edit/{id}', [App\Http\Controllers\MessageController::class, 'edit'])->name('admin.message.edit');
+        Route::put('/update/{id}', [App\Http\Controllers\MessageController::class, 'update'])->name('admin.message.update');
         Route::delete('/destroy/{id}', [App\Http\Controllers\MessageController::class, 'destroy'])->name('admin.message.destroy');
+    });
+
+    // about system routes
+    Route::prefix('about-system')->group(function () {
+        Route::get('/', [App\Http\Controllers\AboutSystemController::class, 'index'])->name('admin.aboutSystem.index');
     });
 
     // profile routes

@@ -49,10 +49,9 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/devakertiwijaya/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/devakertiwijaya/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/madedeva" class="github"><i class="bi bi-github"></i></a>
         
         <!-- login -->
         <a href="{{ route('login') }}" class="login"><i class="bi bi-box-arrow-in-right"></i></a>
@@ -70,7 +69,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Deva</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Work With Deva</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End  Footer -->

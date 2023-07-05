@@ -59,7 +59,7 @@
                   <div class="card-body">
                     <div class="card-title d-flex align-items-start justify-content-between">
                       <div class="avatar flex-shrink-0">
-                        <img src="../assets/img/icons/unicons/cc-success.png" alt="chart success" class="rounded" />
+                        <img src="../assets/img/icons/unicons/user-check-solid-24.png" alt="chart success" class="rounded" />
                       </div>
                       <div class="dropdown">
                         <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"
@@ -82,7 +82,7 @@
                   <div class="card-body">
                     <div class="card-title d-flex align-items-start justify-content-between">
                       <div class="avatar flex-shrink-0">
-                        <img src="../assets/img/icons/unicons/cc-warning.png" alt="chart success" class="rounded" />
+                        <img src="../assets/img/icons/unicons/user-check-solid-24.png" alt="chart success" class="rounded" />
                       </div>
                       <div class="dropdown">
                         <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"
@@ -105,7 +105,7 @@
                   <div class="card-body">
                     <div class="card-title d-flex align-items-start justify-content-between">
                       <div class="avatar flex-shrink-0">
-                        <img src="../assets/img/icons/unicons/wallet-info.png" alt="chart success" class="rounded" />
+                        <img src="../assets/img/icons/unicons/user-check-solid-24.png" alt="chart success" class="rounded" />
                       </div>
                       <div class="dropdown">
                         <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"
@@ -113,12 +113,12 @@
                           <i class="bx bx-dots-vertical-rounded"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                          <a class="dropdown-item" href="/dashboard/category">View More</a>
+                          <a class="dropdown-item" href="/dashboard/message">View More</a>
                         </div>
                       </div>
                     </div>
-                    <span class="fw-semibold d-block mb-1">Portfolio Caregory</span>
-                    <h3 class="card-title mb-2">{{ $category }}</h3>
+                    <span class="fw-semibold d-block mb-1">Unread Message</span>
+                    <h3 class="card-title mb-2">{{ $new_message }}</h3>
                   </div>
                 </div>
               </div>

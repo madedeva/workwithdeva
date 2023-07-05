@@ -70,4 +70,12 @@ class GuestController extends Controller
 
         return redirect()->back()->with('success', 'Message sent successfully');
     }
+
+    public function downloadCv(){
+        $file = public_path()."/files/cv.pdf";
+        $headers = array(
+            'Content-Type: application/pdf',
+        );
+        return response()->download($file, 'cv.pdf', $headers);
+    }
 }
