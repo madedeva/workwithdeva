@@ -34,14 +34,13 @@ Start the local development server
 
 You can now access the server at http://localhost:8000
 
-**TL;DR command list**
+**Command list**
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
-    cd laravel-realworld-example-app
+    git clone https://github.com/madedeva/WorkWithDeva.git
+    cd WorkWithDeva
     composer install
     cp .env.example .env
     php artisan key:generate
-    php artisan jwt:generate 
     
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
 
