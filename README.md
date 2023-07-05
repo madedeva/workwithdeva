@@ -50,7 +50,6 @@ You can now access the server at http://localhost:8000
 
 **Features**
 
-Guest
 - About
 - Resume
 - Portfolio
