@@ -49,8 +49,11 @@ You can now access the server at http://localhost:8000
     php artisan serve
 
 **Features**
-------------------
-|Tes    |test    |
-------------------
-|Tes    |test    |
-------------------
+
+    Guest
+        - About
+        - Resume
+        - Portfolio
+        - Contact
+    Admin
+        - Admin Dashboard
