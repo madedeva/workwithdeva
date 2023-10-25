@@ -44,6 +44,7 @@
           <li><a class="{{ request()->is('resume') ? 'active' : '' }}" href="/resume">Resume</a></li>
           <li><a class="{{ request()->is('portfolio') ? 'active' : '' }}" href="/portfolio">Portfolio</a></li>
           <li><a class="{{ request()->is('contact') ? 'active' : '' }}" href="/contact">Contact</a></li>
+          <li><a class="{{ request()->is('blog') ? 'active' : '' }}" href="/blog">Blog</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

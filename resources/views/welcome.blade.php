@@ -10,7 +10,7 @@
       <div class="row">
 
         <div class="col-lg-6">
-          <h1>Work with <span>Deva</span></h1>
+          <h1>Deva Kerti Wijaya</h1>
           <h2>Junior Web Developer & Graphic Designer from Bali</h2>
           <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut similique doloribus fugiat in fuga nemo itaque provident deleniti, exercitationem iusto earum maiores reprehenderit culpa perferendis necessitatibus? Rem, est eum.</p>
           <div class="btns">

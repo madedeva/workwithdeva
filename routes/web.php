@@ -31,6 +31,7 @@ Route::prefix('portfolio')->group(function () {
     Route::get('/{id}', [GuestController::class, 'portfolioDetails'])->name('portfolio.details');
 });
 Route::get('/contact', [GuestController::class, 'contact'])->name('contact');
+Route::get('/blog', [GuestController::class, 'showblog'])->name('showblog');
 Route::post('/store-message', [GuestController::class, 'storeMessage'])->name('public.message.store');
 
 // admin routes
@@ -102,6 +103,16 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(function () 
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    });
+
+    // blog routes
+    Route::middleware('auth')->group(function () {
+        Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('admin.blog');
+        Route::get('/add-blog', [App\Http\Controllers\BlogController::class, 'create'])->name('admin.blog.create');
+        Route::post('/store', [App\Http\Controllers\BlogController::class, 'store'])->name('admin.blog.store');
+        Route::get('/edit/{id}', [App\Http\Controllers\BlogController::class, 'edit'])->name('admin.blog.edit');
+        Route::put('/update/{id}', [App\Http\Controllers\BlogController::class, 'update'])->name('admin.blog.update');
+        Route::delete('/destroy/{id}', [App\Http\Controllers\BlogController::class, 'destroy'])->name('admin.blog.destroy');
     });
 });
 

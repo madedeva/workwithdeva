@@ -68,18 +68,8 @@
         </div>
 
         <div class="row skills-content">
-          <div class="col-lg-6">
-            @foreach ($skill_first as $skill)
-            <div class="progress">
-              <span class="skill">{{ $skill->name }} <i class="val">{{ $skill->percentage }}%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="{{ $skill->percentage }}" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            @endforeach
-          </div>
-          <div class="col-lg-6">
-            @foreach ($skill_last as $skill)
+          <div class="col-lg-12">
+            @foreach ($skill as $skill)
             <div class="progress">
               <span class="skill">{{ $skill->name }} <i class="val">{{ $skill->percentage }}%</i></span>
               <div class="progress-bar-wrap">
